@@ -1,0 +1,11 @@
+[Unit]
+Description=TrafficGenerator
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5s
+ExecStart=/var/www/go/generator/generator
+
+[Install]
+WantedBy=multi-user.target
